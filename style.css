@@ -11,10 +11,9 @@ body {
     background-color:hsl(45, 52%, 90%);
 }
 
-h2 {
+h2, h3 {
     color: hsl(202, 100%, 38%);
 }
-
 
 .navbar-light .navbar-brand {
     background-color: hsl(202, 100%, 38%);
@@ -34,4 +33,8 @@ h2 {
 
 .navbar-light .navbar-nav .nav-link {
     color: hsl(202, 100%, 38%);
+}
+
+.card-img-overlay {
+    background-color: hsl(45, 52%, 90%);
 }

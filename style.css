@@ -8,8 +8,13 @@
 }
 
 body {
-    background-color: hsl(45, 52%, 90%);
+    background-color:hsl(45, 52%, 90%);
 }
+
+h2 {
+    color: hsl(202, 100%, 38%);
+}
+
 
 .navbar-light .navbar-brand {
     background-color: hsl(202, 100%, 38%);

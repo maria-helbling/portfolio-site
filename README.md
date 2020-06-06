@@ -72,7 +72,7 @@ Follow these guidelines for committing:
 
 * Test your application before you commit to ensure functionality at every step in the development process.
 
-We would like you to have well over 200 commits by graduation, so commit early and often!
+We would like you to have well over 200 commits by graduation, so commit early and often!--
 
 
 ## Submission on BCS

@@ -11,12 +11,6 @@ body {
     background-color: hsl(45, 52%, 90%);
 }
 
-/* .navbar-header { */
-    /* background-color: hsl(202, 100%, 38%);
-    color: hsl(45, 52%, 90%);
-    font-family: "presa";
-    font-size: 30px;
-} */
 .navbar-light .navbar-brand {
     background-color: hsl(202, 100%, 38%);
     color: hsl(45, 52%, 90%);
@@ -24,15 +18,15 @@ body {
     font-size: 30px;
 }
 
-#navbarNav {
+.navbar-light {
     border-bottom: 3px solid hsl(202, 100%, 38%);
+    color: hsl(202, 100%, 38%);
 }
-
 
 .border-right {
     border-color: hsl(202, 100%, 38%);
 }
 
-.nav-link {
+.navbar-light .navbar-nav .nav-link {
     color: hsl(202, 100%, 38%);
 }

@@ -1,12 +1,15 @@
 /* 
+    Base colors to be used in this project
     Blue HEX #007AC2 hsl(202, 100%, 38%)
     Beige HEX #E0CF9C hsl(45, 52%, 75%)
 */
+/* brand font */
 @font-face {
     font-family: "presa";
     src: url("presa.ttf")
 }
 
+/* basic background and text color bootstrap overrides */
 body {
     background-color:hsl(45, 52%, 90%);
 }
@@ -24,10 +27,12 @@ footer a {
     font-size: xx-large;
 }
 
+/* This ensures the fixed navbar doesn't cover main content */
 main {
     padding-top: 80px;
 }
 
+/* navbar look  bootstrap override */
 .navbar-light .navbar-brand {
     background-color: hsl(202, 100%, 38%);
     color: hsl(45, 52%, 90%);
@@ -49,6 +54,7 @@ main {
     color: hsl(202, 100%, 38%);
 }
 
+/* Portfolio page cards and buttons bootstrap default overrides */
 .card-body {
     background-color: hsl(45, 52%, 90%);
 }
@@ -58,8 +64,4 @@ main {
 }
 .btn-primary:hover{
     background-color: hsl(202, 100%, 38%);
-}
-
-.fab {
-    font-size: large;
 }

@@ -1,88 +1,81 @@
-Responsive design ensures that web applications render well on a variety of devices and window or screen sizes.
-So this is a portfolio site built to be responsive using Bootstrap.
+# Portfolio site
 
+This is a portfolio website for developers, creatives and really anyone who needs a platform to present their work online in a simple, responsive website.
 
-## Directions
+[A deployed version can be viewed here.](https://maria-helbling.github.io/portfolio-site/)
 
-First, you will use the Bootstrap CSS Framework to create a mobile responsi Herve portfolio. How do you deliver this?e are some guidelines:
+## Contents
 
-* Create the following files files: `index.html`, `portfolio.html` and `contact.html`.
+1. [About](#about)
+2. [Setup](#setup)
+3. [Credits](#credits)
+4. [License](#license)
+5. [Contributing](#contributing)
 
-* Using Bootstrap, develop your portfolio site with the following items:
+## About
 
-   * A navbar
+This is a simple portfolio site. It can be modified for use for anyone in need of a space to display their work online.
+Responsive design ensures that this web applications renders well on any screen.
 
-   * A responsive layout
+It includes the home page for an image and a short intro about the subject of this page
 
-   * Responsive images
+- [ ] add a screenshot here
 
-* The Bootstrap portfolio should minimize the use of media queries.
+It includes a porfolio page with projects arranged in a grid pattern three to a row or stacked in case the screen is smaller than 576px.
+The layout allows for a descriptive title as well as direct external links to project sites or repos. 
 
-* Screenshots are provided as a reference in the `Assets/Images` folder. Your app does not need to be _exactly_ like the images. Use Bootstrap to create a similar, responsive layout.
+- [ ] Add screenshot of portfolio page
 
-### Hints
+The application comes with a form type contact page with social media links
 
-* Use Bootstrap's grid system (containers, rows, and columns).
+- [ ] Add screenshot of contact page
 
-* On an `xs` screen, content should take up the entire screen. On `sm` and larger screens, you should have some margins on the left and right sides of the screen. Check out various sites on your mobile device vs. your computer to see examples of these differences.
+### Build
 
-* Use an HTML validation service to ensure that each page has valid HTML.
+* In HTML semantic tags have been used to aid with accessibility.
+   * HTML validation services were utilised to ensure validiti
 
-### Minimum Requirements
+* The site is built using Bootstrap.
+   * The use of Bootstrap minimises the need for media queries.
+   * Bootstrap grid system allowes for easy portfolio page layout manipulation
+   * Responsive images included for best viewing experience 
+   * See [Bootstrap documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/) for customising the site with their provided options
 
-* Functional, deployed application
+### Specialty issues
 
-* GitHub repository with README describing the project
+Custom styling has been used to override Bootstrap defaults for the color scheme and Site Brand font. 
+Fallback fonts are still those included in Bootstrap.
 
-* Navbar must be consistent on each page.
+### Future plans
 
-* Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
+- [ ] Adding professional experience page
+- [ ] Adding Modals on Portfolio page for additional details of the projects
+- [ ] Adding skills page
 
-* All links must work.
+## Setup
 
-* Must use semantic html.
+To clone the repo:
+```
+git clone https://github.com/maria-helbling/portfolio-site.git
+``` 
 
-* Each page must have valid and correct HTML. (use a validation service)
+## Credits
 
-* Must contain your personalized information. (bio, name, images, links to social media, etc.)
+The colorscheme and title font were chosen and coordinated by @alreinson
 
-* Must properly utilize Bootstrap components and grid system.
+## License
 
+Built by Maria Helbling
+This application is released under [MIT](LICENSE.txt) license.
 
-### Bonus
+## Contributing
 
-* Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (**Hint:** Check out the Bootstrap documentation).
+To contribute to this application, create a pull request.
+Here are the steps needed for doing that:
+- Fork the repo
+- Create a feature branch (git checkout -b NAME-HERE)
+- Commit your new feature (git commit -m 'Add some feature')
+- Push your branch (git push)
+- Create a new Pull Request
 
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
-
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have well over 200 commits by graduation, so commit early and often!--
-
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URLs of the deployed applications
-
-* The URLs of the GitHub repositories
-
-- - -
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+Following a code review, your feature will be merged.

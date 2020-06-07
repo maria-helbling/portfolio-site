@@ -34,12 +34,13 @@ The application comes with a form type contact page with social media links
 
 * In HTML semantic tags have been used to aid with accessibility.
    * HTML validation services were utilised to ensure validiti
-
 * The site is built using Bootstrap.
    * The use of Bootstrap minimises the need for media queries.
    * Bootstrap grid system allowes for easy portfolio page layout manipulation
    * Responsive images included for best viewing experience 
    * See [Bootstrap documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/) for customising the site with their provided options
+* FontAwesome is used for social media links. [Read more about fontAwesome use and installation here.](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use)
+
 
 ### Specialty issues
 

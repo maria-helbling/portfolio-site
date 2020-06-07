@@ -19,12 +19,17 @@ h2, h3 {
 }
 
 footer {
-    border-top: 3px solid hsl(202, 100%, 38%);
+    border-top: 3px solid hsl(45, 52%, 65%);
 }
 
+/* Changing social media icon styling */
 footer a {
-    color: hsl(202, 100%, 38%);
+    color: hsl(45, 52%, 65%);
     font-size: xx-large;
+}
+
+footer a:hover {
+    color: hsl(202, 100%, 38%);
 }
 
 /* This ensures the fixed navbar doesn't cover main content */

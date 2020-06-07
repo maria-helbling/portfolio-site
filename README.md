@@ -46,6 +46,7 @@ The application comes with a form type contact page with social media links
 
 Custom styling has been used to override Bootstrap defaults for the color scheme and Site Brand font. 
 Fallback fonts are still those included in Bootstrap.
+HTML validated using the [W3C markup validation service](https://validator.w3.org/)
 
 ### Future plans
 

@@ -19,16 +19,16 @@ Responsive design ensures that this web applications renders well on any screen.
 
 It includes the home page for an image and a short intro about the subject of this page
 
-- [ ] add a screenshot here
+![Screenshot of About page](Images/screenshot_about.png)
 
 It includes a porfolio page with projects arranged in a grid pattern three to a row or stacked in case the screen is smaller than 576px.
 The layout allows for a descriptive title as well as direct external links to project sites or repos. 
 
-- [ ] Add screenshot of portfolio page
+![Screenshot of Portfolio page](Images/screenshot_portfolio.png)
 
 The application comes with a form type contact page with social media links
 
-- [ ] Add screenshot of contact page
+![Screenshot of Contact page](Images/screenshot_contact.png)
 
 ### Build
 

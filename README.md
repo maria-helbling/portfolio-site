@@ -68,7 +68,7 @@ The colorscheme and title font were chosen and coordinated by @alreinson
 ## License
 
 Built by Maria Helbling
-This application is released under [MIT](LICENSE.txt) license.
+This application is released under [MIT](assets/LICENSE.txt) license.
 
 ## Contributing
 

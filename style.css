@@ -6,7 +6,7 @@
 /* brand font */
 @font-face {
     font-family: "presa";
-    src: url("presa.ttf")
+    src: url("assets/presa.ttf")
 }
 
 /* basic background and text color bootstrap overrides */
@@ -69,4 +69,15 @@ main {
 }
 .btn-primary:hover{
     background-color: hsl(202, 100%, 38%);
+}
+
+.modal-header {
+    background-color: hsl(45, 52%, 90%);
+    border-color: hsl(45, 52%, 90%);
+    color: hsl(202, 100%, 38%);
+}
+
+.modal-body {
+    background-color: hsl(45, 52%, 90%);
+    border-color: hsl(45, 52%, 75%);
 }

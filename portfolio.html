@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/059afb13b5.js" crossorigin="anonymous"></script> <!--needed for social media links-->
+    <script src="https://kit.fontawesome.com/059afb13b5.js" crossorigin="anonymous"></script>
+    <!--needed for social media links-->
     <title>Portfolio Site: Portfolio</title>
 
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm fixed-top navbar-light p-0 mb-4">
             <!--Title, Bootstrap style override in style.css-->
-            <a class="navbar-brand px-2 text-center text-uppercase font-weight-bolder" href="index.html">Maria Helbling</a>
+            <a class="navbar-brand px-2 text-center text-uppercase font-weight-bolder" href="index.html">Maria
+                Helbling</a>
 
             <!--Toggle button for when menu collapses on sm screen-->
-            <button class="navbar-toggler rounded-0 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler rounded-0 border-0" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <!--Portion of navbar that collapses on small screens-->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -33,16 +40,73 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                </ul>                
+                </ul>
             </div>
         </nav>
-</header>
+    </header>
+    <!-- modals go here: -->
+    <!-- covidocity modal -->
+    <div class="modal fade" id="covidocity-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Covidocity</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>User story</h6>
+                                <p>As a traveller the user is faced with decisions as the World starts to reopen aveter
+                                    COVID-19 restrictions are slowly lifted,</p>
+                                <p>They want to see the evolving COVID situation at their destination in a concise way
+                                </p>
+                                <p>So that they could plan their travel accordingly</p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <h6>Technical notes</h6>
+                                This site used three server side APIs for data gathering. Plus third party APIs like
+                                charts.js etc.
+                            </div>
+                            <div class="col-4">
+                                <h6>Resources</h6>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bulma</li>
+                                    <li>jQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <hr>
+                                <h6>My role</h6>
+                                My role as part of a team was project management as well as back-end development and
+                                data visualisation.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main class="container">
         <!-- row 1 of 2 -->
         <div class="row">
             <div class="col-12">
                 <h2 class="mb-5">Selection of past projects</h2>
-                <p class="mb-5"> This is an overview of more interesting open source projects I have been involved in. Feel free to look around and check details.</p>
+                <p class="mb-5"> This is an overview of more interesting open source projects I have been involved in.
+                    Feel free to look around and check details.</p>
             </div>
         </div>
         <!-- The section housing the Card element grid for portfolio layout -->
@@ -51,77 +115,109 @@
             <!-- col 1 of 4 -->
             <div class="col-12 col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="Images/refactor.png" alt="Screenshot of code" class="card-img-top img-fluid">
+                    <img src="assets/Images/covidocity.PNG" alt="Screenshot of covidocity page"
+                        class="card-img-top img-fluid">
                     <div class="card-body d-flex flex-column justify-content-between">
-                        <h3 class="card-title h4">Code refactor</h3>
-                        <p class="card-text">Accessibility and SEO improvement of an existing site</p>
+                        <h3 class="card-title h4">Covidocity</h3>
+                        <p class="card-text">Data app using various APIs and data visualisation</p>
                         <div class="card-footer border-0 bg-transparent d-flex justify-content-around">
-                            <!-- <a class="btn btn-primary mb-1" href="#" role="button">Details</a> I'll add this later-->
-                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/refactored-code" target="blank" role="button">GitHub</a>
-                            <a class="btn btn-primary mb-1" href="https://maria-helbling.github.io/refactored-code/" target="blank" role="button">WWW</a>
+                            <a class="btn btn-primary mb-1" href="#" role="button" data-toggle="modal"
+                                data-target="#covidocity-modal">Details</a>
+                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/travel-risk-2020"
+                                target="blank" role="button">GitHub</a>
+                            <a class="btn btn-primary mb-1" href="https://maria-helbling.github.io/travel-risk-2020/"
+                                target="blank" role="button">WWW</a>
                         </div>
                     </div>
-                </div><!--card-->
-            </div> <!--column-->
+                </div>
+                <!--card-->
+            </div>
+            <!--column-->
             <!-- col 2 of 4 -->
             <div class="col-12 col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 shadow-sm bg-0">
-                        <img src="https://placekitten.com/150/100" alt="Placeholder kitten image" class="card-img-top img-fluid">
+                    <img src="assets/Images/quizgame.PNG" alt="Screenshot of quiz site" class="card-img-top img-fluid">
                     <div class="card-body d-flex flex-column justify-content-between">
-                        <h3 class="card-title h4">Portfolio site</h3>
-                        <p class="card-text">This project website built with Bootstrap</p>
+                        <h3 class="card-title h4">Code quiz</h3>
+                        <p class="card-text">A fun and interactive quiz game for developers</p>
                         <div class="card-footer border-0 bg-transparent d-flex justify-content-around">
-                            <!-- <a class="btn btn-primary mb-1" href="#" role="button">Details</a> I'll add this later-->
-                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/portfolio-site" target="blank" role="button">GitHub</a>
-                            <a class="btn btn-primary mb-1" href="https://maria-helbling.github.io/portfolio-site/" target="blank" role="button">WWW</a>
+                            <a class="btn btn-primary mb-1" href="#" role="button" data-toggle="modal"
+                                data-target="#quiz-modal">Details</a>
+                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/jscode-quiz-game"
+                                target="blank" role="button">GitHub</a>
+                            <a class="btn btn-primary mb-1" href="https://maria-helbling.github.io/jscode-quiz-game/"
+                                target="blank" role="button">WWW</a>
                         </div>
                     </div>
-                </div> <!--card-->
-            </div> <!--column-->
+                </div>
+                <!--card-->
+            </div>
+            <!--column-->
             <!-- col 3 of 4 -->
             <div class="col-12 col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 shadow-sm">
-                        <img src="Images/coming-soon.png" alt="Placeholder kitten image" class="card-img-top img-fluid">
+                    <img src="assets/Images/weather.PNG" alt="Placeholder kitten image" class="card-img-top img-fluid">
                     <div class="card-body d-flex flex-column justify-content-between">
-                        <h3 class="card-title h4">Site coming soon</h3>
-                        <p class="card-text">Generic work in progress landing page with CSS animation</p>
+                        <h3 class="card-title h4">Weather dashboard</h3>
+                        <p class="card-text">Small weather widget showing current and forecast weather</p>
                         <div class="card-footer border-0 bg-transparent d-flex justify-content-around">
-                            <!-- <a class="btn btn-primary mb-1" href="#" role="button">Details</a> I'll add this later-->
-                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/mariahelbling.com" target="blank" role="button">GitHub</a>
-                            <a class="btn btn-primary mb-1" href="http://mariahelbling.com/" target="blank" role="button">WWW</a>
+                            <a class="btn btn-primary mb-1" href="#" role="button" data-toggle="modal"
+                                data-target="#weather-modal">Details</a>
+                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/weather-dash"
+                                target="blank" role="button">GitHub</a>
+                            <a class="btn btn-primary mb-1" href="https://maria-helbling.github.io/weather-dash/"
+                                target="blank" role="button">WWW</a>
                         </div>
                     </div>
-                </div> <!--card-->
-            </div> <!--column-->
+                </div>
+                <!--card-->
+            </div>
+            <!--column-->
             <!-- col 4 of 4     -->
             <div class="col-12 col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 shadow-sm">
-                        <img src="Images/about-me.png" alt="Screenshot of code" class="card-img-top img-fluid">
+                    <img src="assets/Images/screenshot_about.png" alt="Screenshot of code"
+                        class="card-img-top img-fluid">
                     <div class="card-body d-flex flex-column justify-content-between">
-                        <h3 class="card-title h4">About me</h3>
-                        <p class="card-text">Static html site with some CSS included</p>
+                        <h3 class="card-title h4">Portfolio site</h3>
+                        <p class="card-text">This experiment in portfolio site design</p>
                         <div class="card-footer border-0 bg-transparent d-flex justify-content-around">
-                            <!-- <a class="btn btn-primary mb-1" href="#" role="button">Details</a> I'll add this later-->
-                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/about-me" target="blank" role="button">GitHub</a>
-                            <a class="btn btn-primary mb-1" href="https://maria-helbling.github.io/about-me/" target="blank" role="button">WWW</a>
+                            <a class="btn btn-primary mb-1" href="#" role="button" data-toggle="modal"
+                                data-target="#portfolio-modal">Details</a>
+                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/portfolio-site"
+                                target="blank" role="button">GitHub</a>
+                            <a class="btn btn-primary mb-1" href="https://maria-helbling.github.io/portfolio-site/"
+                                target="blank" role="button">WWW</a>
                         </div>
-                    </div>  
-                </div> <!--card-->
-            </div> <!--column-->
-        </div> <!--row-->        
+                    </div>
+                </div>
+                <!--card-->
+            </div>
+            <!--column-->
+        </div>
+        <!--row-->
     </main>
-    
+
     <footer class="footer mt-5 p-4">
-        <div class="container text-center"> <!--social media links container-->
-            <a href="https://www.linkedin.com/in/mariahelblingprofile/" target="blank"><i class="fab fa-linkedin"></i></a>
+        <div class="container text-center">
+            <!--social media links container-->
+            <a href="https://www.linkedin.com/in/mariahelblingprofile/" target="blank"><i
+                    class="fab fa-linkedin"></i></a>
             <a href="https://github.com/maria-helbling" target="blank"><i class="fab fa-github-square"></i></a>
         </div>
         <p class="text-center">&copy; 2020 Maria Helbling</p>
     </footer>
 
     <!--js refs for Bootstrap features to work-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

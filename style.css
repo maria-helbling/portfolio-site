@@ -11,7 +11,8 @@
 
 /* basic background and text color bootstrap overrides */
 body {
-    background-color:hsl(45, 52%, 90%);
+    /* background-color:hsl(45, 52%, 90%); */
+    background-image: linear-gradient(hsl(45, 52%, 90%),hsl(45, 52%, 65%));
 }
 
 h2, h3 {
@@ -19,12 +20,12 @@ h2, h3 {
 }
 
 footer {
-    border-top: 3px solid hsl(45, 52%, 65%);
+    border-top: 3px solid hsl(45, 52%, 50%);
 }
 
 /* Changing social media icon styling */
 footer a {
-    color: hsl(45, 52%, 65%);
+    color: hsl(45, 52%, 50%);
     font-size: xx-large;
 }
 
@@ -35,6 +36,10 @@ footer a:hover {
 /* This ensures the fixed navbar doesn't cover main content */
 main {
     padding-top: 80px;
+}
+
+hr {
+    border-color: hsl(202, 100%, 38%);
 }
 
 /* navbar look  bootstrap override */
@@ -64,20 +69,24 @@ main {
     background-color: hsl(45, 52%, 90%);
 }
 .btn-primary {
-    background-color: hsl(45, 52%, 65%);
-    border-color: hsl(45, 52%, 65%);
+    background-color: hsl(45, 52%, 55%);
+    border-color: hsl(45, 52%, 55%);
 }
 .btn-primary:hover{
     background-color: hsl(202, 100%, 38%);
 }
 
 .modal-header {
-    background-color: hsl(45, 52%, 90%);
+    background-color: hsl(45, 52%, 75%);
     border-color: hsl(45, 52%, 90%);
     color: hsl(202, 100%, 38%);
 }
 
 .modal-body {
-    background-color: hsl(45, 52%, 90%);
+    background-color: rgba(243,236,216,1);
     border-color: hsl(45, 52%, 75%);
+}
+
+.resources {
+    background-color: hsl(45, 52%, 75%);
 }

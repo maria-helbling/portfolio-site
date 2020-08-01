@@ -5,8 +5,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/059afb13b5.js" crossorigin="anonymous"></script>
     <!--needed for social media links-->
@@ -16,345 +16,331 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm fixed-top navbar-light p-0 mb-4">
-            <!--Title, Bootstrap style override in style.css-->
-            <a class="navbar-brand px-2 text-center text-uppercase font-weight-bolder" href="index.html">Maria
-                Helbling</a>
-
-            <!--Toggle button for when menu collapses on sm screen-->
-            <button class="navbar-toggler rounded-0 border-0" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!--Portion of navbar that collapses on small screens-->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item border-right">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item border-right active">
-                        <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+        <nav class="top-bar">
+            <div class="top-bar-left">
+                <a class="navbar-brand text-center text-uppercase stat" href="index.html">Maria Helbling</a>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu">
+                    <li><a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <!-- modals go here: -->
-    <!-- covidocity modal -->
-    <div class="modal fade" id="covidocity-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Covidocity</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h6>User story</h6>
-                                <p>AS a traveller the user is faced with decisions as the World starts to reopen aveter
-                                    COVID-19 restrictions are slowly lifted,</p>
-                                <p>THEY want to see the evolving COVID situation at their destination in a concise way
-                                </p>
-                                <p>SO THAT they could plan their travel accordingly</p>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-8">
-                                <h6>Technical notes</h6>
-                                <p>Three server side APIs for data gathering. </p>
-                                <p>Four third party APIs: moment.js, countries.js, and charts.js</p>
-                            </div>
-                            <div class="col-4 resources p-2">
-                                <h6>Resources</h6>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>Bulma</li>
-                                    <li>jQuery</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <hr>
-                                <h6>My role</h6>
-                                <p>My role as part of a team of 4: project management, javascript outside of API requests and
-                                data visualisation. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- code quiz modal -->
-    <div class="modal fade" id="quiz-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Covidocity</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h6>User story</h6>
-                            <p>AS a coding student</p>
-                            <p>THEY want to take a timed quiz on javascript fundamentals with high scores table</p>
-                            <p>SO THAT they can improve and gauge their progress</p>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <h6>Technical notes</h6>
-                            <p>Utilizes local storage for score keeping</p>
-                        </div>
-                        <div class="col-4 resources p-2">
-                            <h6>Resources</h6>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <hr>
-                            <h6>My role</h6>
-                            <p>This was a solo project to develop DOM manipulation and local storage usage skills.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-      <!-- weather dash modal -->
-      <div class="modal fade" id="weather-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Covidocity</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-              <div class="modal-body">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-12">
-                              <h6>User story</h6>
-                              <p>AS a traveler</p>
-                              <p>THEY want to see the weather outlook for multiple cities</p>
-                              <p>SO THAT they can plan trips accordingly</p>
-                              <hr>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-8">
-                              <h6>Technical notes</h6>
-                              <p>Opoen weather API for forecasts</p>
-                              <p>Local storage for displaying frequent searches</p>
-                          </div>
-                          <div class="col-4 resources p-2">
-                              <h6>Resources</h6>
-                              <ul>
-                                  <li>HTML</li>
-                                  <li>CSS</li>
-                                  <li>JavaScript</li>
-                                  <li>Foundation</li>
-                              </ul>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-12">
-                              <hr>
-                              <h6>My role</h6>
-                              <p>This was a solo project to play around with server side APIs and test out Foundation framework.</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      </div>
-
-        <!-- portfolio site modal -->
-        <div class="modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Covidocity</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h6>User story</h6>
-                                <p>AS a full stack developer</p>
-                                <p>THEY want to utilise a mobile first site </p>
-                                <p>SO THAT they can showcase their completed projects</p>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-8">
-                                <h6>Technical notes</h6>
-                                <p>Evolving site for me to test out new technologies and creative ideas</p>
-                            </div>
-                            <div class="col-4 resources p-2">
-                                <h6>Resources</h6>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Bootstrap</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <hr>
-                                <h6>My role</h6>
-                                <p>This is a live solo project.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
-    <main class="container">
+    <main class="grid-container">
         <!-- row 1 of 2 -->
-        <div class="row">
-            <div class="col-12">
+        <div class="grid-x">
+            <div class="cell">
                 <h2 class="mb-5">Selection of past projects</h2>
                 <p class="mb-5"> This is an overview of the more interesting projects I have been involved in.
-                    Feel free to look around and check details.</p>
+                    Feel free to flip through.</p>
             </div>
         </div>
         <!-- The section housing the Card element grid for portfolio layout -->
         <!-- row 2 of 2 -->
-        <div class="row">
+        <div class="grid-x grid-margin-x grid-margin-y" >
             <!-- col 1 of 4 -->
-            <div class="col-12 col-sm-6 col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="https://maria-helbling.github.io/travel-risk-2020/" target="blank">
-                        <img src="assets/Images/covidocity.PNG" alt="Screenshot of covidocity page" class="card-img-top img-fluid">
-                    </a>
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <h3 class="card-title h4">Covidocity</h3>
-                        <p class="card-text">Data app using various APIs and data visualisation</p>
-                        <div class="card-footer border-0 bg-transparent d-flex justify-content-around">
-                            <a class="btn btn-primary mb-1" href="#" role="button" data-toggle="modal"
-                                data-target="#covidocity-modal">Details</a>
-                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/travel-risk-2020"
-                                target="blank" role="button">GitHub</a>
-                            <a class="btn btn-primary mb-1" href="https://maria-helbling.github.io/travel-risk-2020/"
-                                target="blank" role="button">WWW</a>
+            <!-- ============================================================================================================================ -->
+            <div class="cell medium-6 large-4 mb-4">
+                <div class="flipcard">
+                    <div class="card__inner">
+                        <div class="card__back">
+                            <div class=" grid-container">
+                                <div class="grid-x">
+                                    <div class="cell text-center details-heading">
+                                        <h5>DrawScape</h5>
+                                    </div>
+                                    <div class="cell">
+                                        <h6><strong>User story</strong></h6>
+                                        AS a person in quarantine, who is forced to socialise online with friends and
+                                        relatives <br>
+                                        THEY want to have interactive real time parlour games in this new online world
+                                        <br>
+                                        SO THAT they could spend quality time with their loved ones</p>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="grid-x">
+                                    <div class="cell small-8">
+                                        <h6><strong>Technical notes</strong></h6>
+                                        <p>MySQL for data persistency in the game rooms. <br>
+                                            CreateJS for touch responsive drawing and socket.io for web socket use</p>
+                                    </div>
+                                    <div class="cell small-4 resources p-2">
+                                        <h6>Resources</h6>
+                                        <ul>
+                                            <li>handlebars</li>
+                                            <li>Materialize</li>
+                                            <li>jQuery</li>
+                                            <li>Sequelize</li>
+                                            <li>Express</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid-x">
+                                    <div class="cell">
+                                        <hr>
+                                        <h6><strong>My role</strong></h6>
+                                        <p>As part of a team of 4: drawing functionality, socket.io, part of the game
+                                            algorithm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__front">
+                            <div class="grid-x">
+                                <div class="cell">
+                                    <div class="card-section">
+                                        <a href="https://drawscape.herokuapp.com" target="blank">
+                                            <img src="assets/Images/drawscape.PNG" alt="Screenshot of covidocity page">
+                                        </a>
+                                    </div>
+                                    <div class="card-section">
+                                        <h3 class="card-title h4">DrawScape</h3>
+                                        <p class="card-text">Live drawing and chat app utilising socket.io and createJS
+                                        </p>
+                                        <div class="card-divider">
+                                            <a class="button mb-1" role="button" data-open="covidocityModal">Details</a>
+                                            <a class="button mb-1" onclick="event.stopPropagation();"
+                                                href="https://github.com/indyminhas/DrawScape" target="blank"
+                                                role="button">GitHub</a>
+                                            <a class="button mb-1" onclick="event.stopPropagation();"
+                                                href="https://drawscape.herokuapp.com" target="blank"
+                                                role="button">WWW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--card-->
             </div>
-            <!--column-->
-            <!-- col 2 of 4 -->
-            <div class="col-12 col-sm-6 col-md-4 mb-4">
-                <div class="card h-100 shadow-sm bg-0">
-                    <a href="https://maria-helbling.github.io/jscode-quiz-game/" target="blank">
-                        <img src="assets/Images/quizgame.PNG" alt="Screenshot of quiz site" class="card-img-top img-fluid">
-                    </a>
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <h3 class="card-title h4">Code quiz</h3>
-                        <p class="card-text">A fun and interactive quiz game for developers</p>
-                        <div class="card-footer border-0 bg-transparent d-flex justify-content-around">
-                            <a class="btn btn-primary mb-1" href="#" role="button" data-toggle="modal"
-                                data-target="#quiz-modal">Details</a>
-                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/jscode-quiz-game"
-                                target="blank" role="button">GitHub</a>
-                            <a class="btn btn-primary mb-1" href="https://maria-helbling.github.io/jscode-quiz-game/"
-                                target="blank" role="button">WWW</a>
+            <!-- ============================================================================================================================ -->
+            <div class="cell medium-6 large-4 mb-4">
+                <div class="flipcard">
+                    <div class="card__inner">
+                        <div class="card__back">
+                            <div class=" grid-container">
+                                <div class="grid-x">
+                                    <div class="cell text-center details-heading">
+                                        <h5>Covidocity</h5>
+                                    </div>
+                                    <div class="cell">
+                                        <h6><strong>User story</strong></h6>
+                                        <p>AS a traveller the user is faced with decisions as the World starts to reopen
+                                            aveter
+                                            COVID-19 restrictions are slowly lifted,
+                                            <br>
+                                            THEY want to see the evolving COVID situation at their destination in a
+                                            concise way <br>
+                                            SO THAT they could plan their travel accordingly</p>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="grid-x">
+                                    <div class="cell small-8">
+                                        <h6><strong>Technical notes</strong></h6>
+                                        <p>Three server side APIs for data gathering. <br>
+                                            Four third party APIs: moment.js, countries.js, and charts.js</p>
+                                    </div>
+                                    <div class="cell small-4 resources p-2">
+                                        <h6>Resources</h6>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>Bulma</li>
+                                            <li>jQuery</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid-x">
+                                    <div class="cell">
+                                        <hr>
+                                        <h6><strong>My role</strong></h6>
+                                        <p>As part of a team of 4: project management, javascript outside of API
+                                            requests and data visualisation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__front">
+                            <div class="grid-x">
+                                <div class="cell">
+                                    <div class="card-section">
+                                        <a href="https://maria-helbling.github.io/travel-risk-2020/" target="blank">
+                                            <img src="assets/Images/covidocity.PNG" alt="Screenshot of covidocity page">
+                                        </a>
+                                    </div>
+                                    <div class="card-section">
+                                        <h3 class="card-title h4">Covidocity</h3>
+                                        <p class="card-text">Data app using various APIs and data visualisation</p>
+                                        <div class="card-divider">
+                                            <a class="button mb-1" role="button">Details</a>
+                                            <a class="button mb-1" onclick="event.stopPropagation();"
+                                                href="https://github.com/maria-helbling/travel-risk-2020" target="blank"
+                                                role="button">GitHub</a>
+                                            <a class="button mb-1" onclick="event.stopPropagation();"
+                                                href="https://maria-helbling.github.io/travel-risk-2020/" target="blank"
+                                                role="button">WWW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--card-->
             </div>
-            <!--column-->
-            <!-- col 3 of 4 -->
-            <div class="col-12 col-sm-6 col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="https://maria-helbling.github.io/weather-dash/" target="blank">
-                        <img src="assets/Images/weather.PNG" alt="Placeholder kitten image" class="card-img-top img-fluid">
-                    </a>
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <h3 class="card-title h4">Weather dashboard</h3>
-                        <p class="card-text">Small weather widget showing current and forecast weather</p>
-                        <div class="card-footer border-0 bg-transparent d-flex justify-content-around">
-                            <a class="btn btn-primary mb-1" href="#" role="button" data-toggle="modal"
-                                data-target="#weather-modal">Details</a>
-                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/weather-dash"
-                                target="blank" role="button">GitHub</a>
-                            <a class="btn btn-primary mb-1" href="https://maria-helbling.github.io/weather-dash/"
-                                target="blank" role="button">WWW</a>
+            <!-- ============================================================================================================================ -->
+            <div class="cell medium-6 large-4 mb-4">
+                <div class="flipcard">
+                    <div class="card__inner">
+                        <div class="card__back">
+                            <div class=" grid-container">
+                                <div class="grid-x">
+                                    <div class="cell text-center details-heading">
+                                        <h5>Code quiz</h5>
+                                    </div>
+                                    <div class="cell">
+                                        <h6><strong>User story</strong></h6>
+                                        <p>AS a coding student<br>
+                                            THEY want to take a timed quiz on javascript fundamentals with high scores table<br>
+                                            SO THAT they can improve and gauge their progress</p>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="grid-x">
+                                    <div class="cell small-8">
+                                        <h6><strong>Technical notes</strong></h6>
+                                        <p>Utilizes local storage for score keeping and used jQuery DOM manipulation tools to dynamically render nodes</p>
+                                    </div>
+                                    <div class="cell small-4 resources p-2">
+                                        <h6>Resources</h6>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>Bootstrap</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid-x">
+                                    <div class="cell">
+                                        <hr>
+                                        <h6><strong>My role</strong></h6>
+                                        <p>This was a solo project to develop DOM manipulation and local storage usage skills.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__front">
+                            <div class="grid-x">
+                                <div class="cell">
+                                    <div class="card-section">
+                                        <a href="https://maria-helbling.github.io/jscode-quiz-game/" target="blank">
+                                            <img src="assets/Images/quizgame.png" alt="Screenshot of covidocity page">
+                                        </a>
+                                    </div>
+                                    <div class="card-section">
+                                        <h3 class="card-title h4">Code quiz</h3>
+                                        <p class="card-text">A fun and interactive JavaScript quiz game for developers</p>
+                                        <div class="card-divider">
+                                            <a class="button mb-1" role="button">Details</a>
+                                            <a class="button mb-1" onclick="event.stopPropagation();"
+                                                href="https://github.com/maria-helbling/jscode-quiz-game" target="blank"
+                                                role="button">GitHub</a>
+                                            <a class="button mb-1" onclick="event.stopPropagation();"
+                                                href="https://maria-helbling.github.io/jscode-quiz-game/" target="blank"
+                                                role="button">WWW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--card-->
             </div>
-            <!--column-->
-            <!-- col 4 of 4     -->
-            <div class="col-12 col-sm-6 col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="https://maria-helbling.github.io/portfolio-site/" target="blank">
-                    <img src="assets/Images/screenshot_about.png" alt="Screenshot of code" class="card-img-top img-fluid">
-                    </a>
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <h3 class="card-title h4">Portfolio site</h3>
-                        <p class="card-text">This experiment in portfolio site design</p>
-                        <div class="card-footer border-0 bg-transparent d-flex justify-content-around">
-                            <a class="btn btn-primary mb-1" href="#" role="button" data-toggle="modal"
-                                data-target="#portfolio-modal">Details</a>
-                            <a class="btn btn-primary mb-1" href="https://github.com/maria-helbling/portfolio-site"
-                                target="blank" role="button">GitHub</a>
-                            <a class="btn btn-primary mb-1" href="https://maria-helbling.github.io/portfolio-site/"
-                                target="blank" role="button">WWW</a>
+            <!-- ============================================================================================================================ -->
+            <div class="cell medium-6 large-4 mb-4">
+                <div class="flipcard">
+                    <div class="card__inner">
+                        <div class="card__back">
+                            <div class=" grid-container">
+                                <div class="grid-x">
+                                    <div class="cell text-center details-heading">
+                                        <h5>Weather dash</h5>
+                                    </div>
+                                    <div class="cell">
+                                        <h6><strong>User story</strong></h6>
+                                        <p>AS a traveler <br>
+                                            THEY want to see the weather outlook for multiple cities<br>
+                                            SO THAT they can plan trips accordingly</p>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="grid-x">
+                                    <div class="cell small-8">
+                                        <h6><strong>Technical notes</strong></h6>
+                                        <p>Opoen weather API for forecasts <br>
+                                            Local storage for displaying frequent searches</p>
+                                    </div>
+                                    <div class="cell small-4 resources p-2">
+                                        <h6>Resources</h6>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>Foundation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid-x">
+                                    <div class="cell">
+                                        <hr>
+                                        <h6><strong>My role</strong></h6>
+                                        <p>This was a solo project to play around with server side APIs and test out Foundation
+                                            framework.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__front">
+                            <div class="grid-x">
+                                <div class="cell">
+                                    <div class="card-section">
+                                        <a href="https://maria-helbling.github.io/weather-dash/" target="blank">
+                                            <img src="assets/Images/weather.png" alt="Screenshot of covidocity page">
+                                        </a>
+                                    </div>
+                                    <div class="card-section">
+                                        <h3 class="card-title h4">Weather dash</h3>
+                                        <p class="card-text">Small weather widget showing current and forecast weather</p>
+                                        <div class="card-divider">
+                                            <a class="button mb-1" role="button">Details</a>
+                                            <a class="button mb-1" onclick="event.stopPropagation();"
+                                                href="https://github.com/maria-helbling/weather-dash" target="blank"
+                                                role="button">GitHub</a>
+                                            <a class="button mb-1" onclick="event.stopPropagation();"
+                                                href="https://maria-helbling.github.io/weather-dash/" target="blank"
+                                                role="button">WWW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--card-->
             </div>
+            <!-- ============================================================================================================================ -->
             <!--column-->
         </div>
         <!--row-->
     </main>
 
-    <footer class="footer mt-5 p-4">
+    <footer class="footer">
         <div class="container text-center">
             <!--social media links container-->
             <a href="https://www.linkedin.com/in/mariahelblingprofile/" target="blank"><i
@@ -368,12 +354,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

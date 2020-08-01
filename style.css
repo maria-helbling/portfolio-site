@@ -9,7 +9,7 @@
     src: url("assets/presa.ttf")
 }
 
-/* basic background and text color bootstrap overrides */
+/* basic background and text color*/
 body {
     /* background-color:hsl(45, 52%, 90%); */
     background-image: linear-gradient(hsl(45, 52%, 90%),hsl(45, 52%, 65%));
@@ -21,6 +21,7 @@ h2, h3 {
 
 footer {
     border-top: 3px solid hsl(45, 52%, 50%);
+    padding:2rem;
 }
 
 /* Changing social media icon styling */
@@ -35,44 +36,58 @@ footer a:hover {
 
 /* This ensures the fixed navbar doesn't cover main content */
 main {
-    padding-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 5vh;
 }
 
 hr {
     border-color: hsl(202, 100%, 38%);
 }
 
-/* navbar look  bootstrap override */
-.navbar-light .navbar-brand {
-    background-color: hsl(202, 100%, 38%);
-    color: hsl(45, 52%, 90%);
-    font-family: "presa";
-    font-size: 30px;
+/* navbar look */
+nav {
+    padding-left: 3rem;
 }
 
-.navbar-light {
-    border-bottom: 3px solid hsl(202, 100%, 38%);
+.navbar-brand {
+    background-color:hsl(45, 52%, 90%) ;
+    color: hsl(202, 100%, 38%);
+    font-family: "presa";
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.top-bar {
     color: hsl(202, 100%, 38%);
     background-color: hsl(45, 52%, 90%);
 }
 
-.border-right {
-    border-color: hsl(202, 100%, 38%);
-}
 
-.navbar-light .navbar-nav .nav-link {
+.top-bar-right, .nav-link, .top-bar-right ul {
     color: hsl(202, 100%, 38%);
+    background-color: hsl(45, 52%, 90%);
 }
 
 /* Portfolio page cards and buttons bootstrap default overrides */
-.card-body {
+.card-section, .card-divider {
     background-color: hsl(45, 52%, 90%);
 }
-.btn-primary {
+
+.flipcard {
+    margin: 10px;
+}
+
+.details-heading {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: hsl(202, 100%, 38%)
+}
+
+.button {
     background-color: hsl(45, 52%, 55%);
     border-color: hsl(45, 52%, 55%);
 }
-.btn-primary:hover{
+.button:hover{
     background-color: hsl(202, 100%, 38%);
 }
 
@@ -82,6 +97,10 @@ hr {
     color: hsl(202, 100%, 38%);
 }
 
+.flipcard .button {
+    margin: 0.5rem
+}
+
 .modal-body {
     background-color: rgba(243,236,216,1);
     border-color: hsl(45, 52%, 75%);
@@ -89,4 +108,66 @@ hr {
 
 .resources {
     background-color: hsl(45, 52%, 75%);
+}
+
+/* Card flip animation CSS */
+
+.card--flipped .card__inner {
+        transform: rotateY(180deg);
+    }
+
+
+.flipcard,
+.card__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card__back {
+    transform: rotateY(180deg);
+}
+
+.card__inner {
+    transition: transform .25s ease-in-out;
+    transform-origin: 50% 50%;
+    transform-style: preserve-3d;
+  }
+
+.card__front  {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:black;
+    background-color: hsl(45, 52%, 90%); 
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.card__back  {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:black;
+    background-color: hsl(45, 52%, 90%); 
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .flipcard {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }

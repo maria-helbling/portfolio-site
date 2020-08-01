@@ -4,8 +4,11 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
+    <!-- Compressed CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/059afb13b5.js" crossorigin="anonymous"></script> <!--needed for social media links-->
     <title>Portfolio Site: About Me</title>
@@ -13,42 +16,36 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm fixed-top navbar-light p-0 mb-4">
-            <!--Title, Bootstrap style override in style.css-->
-            <a class="navbar-brand px-2 text-center text-uppercase font-weight-bolder" href="index.html">Maria Helbling</a> 
-            
-            <!--Toggle button for when menu collapses on sm screen-->
-            <button class="navbar-toggler rounded-0 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!--Portion of navbar that collapses on small screens-->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item border-right active">
-                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item border-right">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>                
+        <nav class="top-bar">
+            <div class="top-bar-left">
+                <a class="navbar-brand text-center text-uppercase stat" href="index.html">Maria Helbling</a>   
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li><a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a></li>
+                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
             </div>
         </nav>
     </header>
 
-    <main class="container">
-        <img src="https://www.alexela.ee/sites/default/files/styles/1170x350/public/2019-04/MariaH.jpg?itok=jcdw9MZE" class="img-fluid mb-5" alt="Photo of Maria">
-        <h2 class="mb-5">This is me</h2>
-        <p>Web & Software Developer who strives in ambiguous fast paced environments, translating real world business problems to technical solutions.</p>
-            <p> 10+ years of business experience, working with B2B and B2C oriented goods and services, in legacy and start-up organisations, across a variety of industries.  Senior leader, who took an organisation of 300 people and over $250 million revenue through 5 M&A deals, 60% revenue and 9% market share growth. </p>
-            <p>Earned a BA in Economics from the University of Cambridge (UK) and MSc in same from Universiteit van Amsterdam (NL). Currently working towards a certificate in full stack web development from the University of Washington bootcamp. </p>
-            <p>A team player with a strong quantitative background in analysis and business modelling and a track record for learning fast.</p> 
+    <main class="grid-container">
+        <div class="cell">
+            <img src="https://www.alexela.ee/sites/default/files/styles/1170x350/public/2019-04/MariaH.jpg?itok=jcdw9MZE" class="img-fluid mb-5" alt="Photo of Maria">
+        </div>
+        <div class="cell">
+
+            <h2>This is me</h2>
+            <p>Web & Software Developer who strives in ambiguous fast paced environments, translating real world business problems to technical solutions.</p>
+                <p> 10+ years of business experience, working with B2B and B2C oriented goods and services, in legacy and start-up organisations, across a variety of industries.  Senior leader, who took an organisation of 300 people and over $250 million revenue through 5 M&A deals, 60% revenue and 9% market share growth. </p>
+                <p>Earned a BA in Economics from the University of Cambridge (UK) and MSc in same from Universiteit van Amsterdam (NL). Currently working towards a certificate in full stack web development from the University of Washington bootcamp. </p>
+                <p>A team player with a strong quantitative background in analysis and business modelling and a track record for learning fast.</p> 
+        </div>    
+        
     </main>
     
-    <footer class="footer mt-5 p-4">
+    <footer class="footer">
         <div class="container text-center"> <!--social media links container-->
             <a href="https://www.linkedin.com/in/mariahelblingprofile/" target="blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/maria-helbling" target="blank"><i class="fab fa-github-square"></i></a>
@@ -58,8 +55,8 @@
 
     <!--js refs for Bootstrap features to work-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

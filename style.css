@@ -27,7 +27,7 @@ footer {
 /* Changing social media icon styling */
 footer a {
     color: hsl(45, 52%, 50%);
-    font-size: xx-large;
+    font-size: 3rem;
 }
 
 footer a:hover {
